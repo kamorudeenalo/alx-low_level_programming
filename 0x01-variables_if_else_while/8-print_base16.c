@@ -10,7 +10,7 @@ int main(void)
 {
 	int myAlpha, myNum;
 
-	for (myNum = 1; myNum < 10; myNum++)
+	for (myNum = 0; myNum < 10; myNum++)
 		putchar('0' + myNum);
 	for (myAlpha = 'a'; myAlpha <= 'f'; myAlpha++)
 		putchar(myAlpha);
