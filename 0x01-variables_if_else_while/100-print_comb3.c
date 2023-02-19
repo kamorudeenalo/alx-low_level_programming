@@ -1,31 +1,33 @@
 #include <stdio.h>
 
 /**
-  * main - Print two digits seperated by comma and space to the std. output
+  * main - prints all possible different combinations of two digits.
   *
   * Return: Always 0 (Success)
   */
 
 int main(void)
 {
-	int i;
+	int ch;
+	int n;
 
-	for (i = 1; i <= 89; i++)
+	for (ch = 48; ch <= 57; ch++)
 	{
-		if (i == 10 || i == 11)
+		for (n = 49; n <= 57; n++)
 		{
-			continue;
-		}
-
-		putchar((i / 10) + '0');
-		putchar((i % 10) + '0');
-
-		if (i != 89)
-		{
-			putchar(',');
-			putchar(' ');
+			if (n > ch)
+			{
+				putchar(ch);
+				putchar(n);
+				if (ch != 56 || n != 57)
+				{
+					putchar(44);
+					putchar(32);
+				}
+			}
 		}
 	}
+
 	putchar('\n');
 
 	return (0);
