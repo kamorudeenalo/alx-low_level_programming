@@ -5,7 +5,7 @@
 /**
  * check_digit - checks if a given char is number or not
  * @a: input char
- * Return: int
+ * Return: int (Success)
  **/
 
 int check_digit(char *a)
