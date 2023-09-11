@@ -10,7 +10,7 @@ int main(void)
 {
 	int myLowercase;
 	int myUppercase;
-	    
+	
 	for (myLowercase = 97; myLowercase <= 122; myLowercase++)
 	{
 		putchar(myLowercase);
