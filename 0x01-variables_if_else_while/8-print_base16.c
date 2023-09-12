@@ -8,16 +8,15 @@
 
 int main(void)
 {
-	int base16;
+	char base16;
 
-	for (base16 = 0; base16 <= 9; base16++)
+	for (base16 = '0'; base16 <= '9'; base16++)
 	{
-		putchar('0' + base16);
+		putchar(base16);
 	}
-
-	for (base16 = 97; base16 <= 102; base16++)
+	for (base16 = 'a'; base16 <= 'f'; base16++)
 	{
-		 putchar(base16);
+		putchar(base16);
 	}
 
 	putchar('\n');
