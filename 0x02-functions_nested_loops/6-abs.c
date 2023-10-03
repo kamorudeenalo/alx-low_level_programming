@@ -8,7 +8,7 @@
 
 int _abs(int)
 {
-	_abs(r);
+	int r;
 
-	return (0);
+	return(r < 0 ? -r : r);
 }
